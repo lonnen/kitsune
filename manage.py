@@ -23,6 +23,10 @@ sys.path[:0] = new_sys_path
 
 # Now we can import from third-party libraries.
 
+import OpenSSL
+print dir(OpenSSL)
+print OpenSSL.__version__
+
 from django.core.management import execute_manager, setup_environ
 
 try:

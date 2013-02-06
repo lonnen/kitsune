@@ -20,13 +20,13 @@ HOME = /tmp
 50 */6 * * * {{ cron }} cache_top_contributors
 
 # Once per day.
-0 16 * * * {{ cron }} reload_wiki_traffic_stats
+42 19 * * * {{ cron }} reload_wiki_traffic_stats
 40 1 * * * {{ cron }} update_weekly_votes
 42 0 * * * {{ cron }} update_top_contributors
 0 21 * * * {{ cron }} cache_most_unhelpful_kb_articles
 47 2 * * * {{ cron }} remove_expired_registration_profiles
-0 9 * * * {{ cron }} update_visitors_metric
-0 10 * * * {{ cron }} update_l10n_metric
+44 19 * * * {{ cron }} update_visitors_metric
+46 19 * * * {{ cron }} update_l10n_metric
 0 3 * * * {{ cron }} update_contributor_metrics
 0 4 * * * {{ cron }} auto_lock_old_questions
 0 5 * * * {{ cron }} reindex_kb
